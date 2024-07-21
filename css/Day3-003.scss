@@ -1,0 +1,56 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  /*이렇게 나란히 쓰면 영문, 한글 폰트를 알아서 적용시켜줌*/
+  font-family: "Inter", "Noto Sans KR", sans-serif;
+  background-color: black;
+}
+ul,
+li,
+input,
+button,
+select {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border: none;
+  appearance: none;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/bg-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .title {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    line-height: 100vh;
+    color: white;
+  }
+}
+
+.header {
+  mix-blend-mode: difference;
+  .logo {
+    position: fixed;
+    left: 30px;
+    top: 10px;
+  }
+  .menu {
+    position: fixed;
+    right: 30px;
+    top: 10px;
+    li {
+      display: inline-block;
+      margin: 0px 3px;
+      color: #fff;
+    }
+  }
+}
