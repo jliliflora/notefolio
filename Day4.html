@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 4</title>
+    <style>
+      /* .box {
+        background-color: blue;
+        height: 100px;
+        position: absolute;
+        left: 500px;
+        right: 200px;
+      } */
+      .box001 {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        /* display: inline-block; */
+      }
+      .box002 {
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        /* display: inline-block; */
+      }
+      .container001 {
+        /*박스마다 inline-block을 해줘야하는 것들을 flex로 해결!*/
+        display: flex;
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        /*양 끝으로 배치*/
+        justify-content: space-between;
+      }
+      .container002 {
+        /*박스마다 inline-block을 해줘야하는 것들을 flex로 해결!*/
+        display: flex;
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        /*가로로 가운데 정렬*/
+        justify-content: center;
+        /* justify-content: start center end; */
+        /*세로로 가운데 정렬*/
+        align-items: center;
+        gap: 10px;
+      }
+      .container003 {
+        display: flex;
+        border: 1px solid black;
+        width: 500px;
+        height: 500px;
+        gap: 10px 10px;
+        flex-wrap: wrap; /*다음줄로 넘어가기 하기*/
+      }
+      .box003 {
+        background-color: green;
+        height: 100px;
+        /*부모태크에 display:flex가 있어야함*/
+        flex: 1;
+      }
+      .box004 {
+        background-color: brown;
+        height: 100px;
+        flex: 1;
+      }
+      .box005 {
+        background-color: violet;
+        height: 100px;
+        flex: 2;
+      }
+      .box006 {
+        background-color: yellow;
+        height: 100px;
+        width: calc(50% - 5px);
+      }
+      .box007 {
+        background-color: pink;
+        height: 100px;
+        width: calc(50% - 5px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container003">
+      <!-- <div class="box003"></div>
+      <div class="box004"></div>
+      <div class="box005"></div> -->
+      <!-- <div class="box003"></div>
+      <div class="box004"></div>
+      <div class="box003"></div>
+      <div class="box004"></div> -->
+      <div class="box006"></div>
+      <div class="box007"></div>
+    </div>
+  </body>
+</html>

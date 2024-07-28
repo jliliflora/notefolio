@@ -41,19 +41,17 @@ select {
 
 .header {
   mix-blend-mode: difference;
-}
-.header .logo {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   left: 30px;
-  top: 10px;
-}
-.header .menu {
-  position: fixed;
   right: 30px;
   top: 10px;
 }
+.header .menu {
+  display: flex;
+  gap: 10px;
+}
 .header .menu li {
-  display: inline-block;
-  margin: 0px 3px;
   color: #fff;
 }/*# sourceMappingURL=Day3-003.css.map */

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+body {
+  padding: 0px;
+  margin: 0px;
+  /*이렇게 나란히 쓰면 영문, 한글 폰트를 알아서 적용시켜줌*/
+  font-family: "Inter", "Noto Sans KR", sans-serif;
+}
+
+ul,
+li,
+input,
+button,
+select {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.header {
+  background-color: #fefaf5;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+}
+.header .list {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+.header .logo {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 100px);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+.main img {
+  width: 100%;
+}
+.main .item {
+  position: relative;
+  width: 50%;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  box-sizing: border-box; /*박스 안쪽으로 라인을 주는것*/
+}
+.main .item .item-text {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  font-size: 14px;
+}/*# sourceMappingURL=Day4-002.css.map */

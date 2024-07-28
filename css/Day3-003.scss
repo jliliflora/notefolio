@@ -38,18 +38,26 @@ select {
 
 .header {
   mix-blend-mode: difference;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  left: 30px;
+  right: 30px;
+  top: 10px;
   .logo {
-    position: fixed;
-    left: 30px;
-    top: 10px;
+    // position: fixed;
+    // left: 30px;
+    // top: 10px;
   }
   .menu {
-    position: fixed;
-    right: 30px;
-    top: 10px;
+    // position: fixed;
+    // right: 30px;
+    // top: 10px;
+    display: flex;
+    gap: 10px;
     li {
-      display: inline-block;
-      margin: 0px 3px;
+      // display: inline-block;
+      // margin: 0px 3px;
       color: #fff;
     }
   }
