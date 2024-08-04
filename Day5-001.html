@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box_container {
+        /* 가로정렬을 하려고 flex를 쓰는건데 */
+        display: flex;
+        /* 이거쓰면 세로정렬됨*/
+        flex-direction: column;
+        /*column을 쓰면 가로정렬이 세로정렬로 되고*/
+        justify-content: center;
+        /*세로정렬이 가로정렬이 되어버림 (그니까 주축이 뒤바뀐다는 얘기임)*/
+        align-items: center;
+        gap: 10px;
+
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+      }
+      .box {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+
+        /*얘는 정렬할때 써도 상관은 없지만 지양하는게 좋다함
+        margin: 0 auto;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box_container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

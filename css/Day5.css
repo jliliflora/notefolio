@@ -1,0 +1,77 @@
+@charset "UTF-8";
+body {
+  padding: 0px;
+  margin: 0px;
+  /*이렇게 나란히 쓰면 영문, 한글 폰트를 알아서 적용시켜줌*/
+  font-family: "Inter", "Noto Sans KR", sans-serif;
+}
+
+ul,
+li,
+input,
+button,
+select {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.header {
+  position: fixed;
+  right: 30px;
+  left: 30px;
+  top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .menu {
+  display: flex;
+  font-weight: 500;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.contents_wrap .main_copy {
+  font-size: 26px;
+  line-height: 30px;
+  padding-top: 196px;
+  padding-left: 30px;
+}
+.contents_wrap .project_items {
+  display: flex;
+  gap: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.contents_wrap .project_items .pr_item {
+  width: 33.3%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.contents_wrap .project_items .pr_item:hover .pr_img {
+  transform: scale(1.1);
+}
+.contents_wrap .project_items .pr_item .pr_img {
+  transition-duration: 0.5s;
+}
+.contents_wrap .project_items .pr_item .pr_img img {
+  width: 100%;
+  display: block;
+}
+.contents_wrap .project_items .pr_item .pr_info {
+  position: absolute;
+  top: 20px;
+  left: 0%;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+}/*# sourceMappingURL=Day5.css.map */

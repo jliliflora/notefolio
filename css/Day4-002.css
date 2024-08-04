@@ -34,11 +34,12 @@ select {
   display: flex;
   gap: 10px;
   padding: 20px;
+  box-sizing: border-box;
 }
 .header .logo {
   position: absolute;
   top: 20px;
-  left: calc(50% - 100px);
+  transform: translate(-50%, 0);
 }
 
 .main {
@@ -48,13 +49,17 @@ select {
 }
 .main img {
   width: 100%;
+  display: block;
 }
 .main .item {
   position: relative;
   width: 50%;
-  border-left: 1px solid black;
+  border-right: 1px solid black;
   border-bottom: 1px solid black;
   box-sizing: border-box; /*박스 안쪽으로 라인을 주는것*/
+}
+.main .item:nth-child(2n) {
+  border-right: none;
 }
 .main .item .item-text {
   position: absolute;

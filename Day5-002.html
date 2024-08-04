@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        animation: box_move 2s 2 forwards; /*forwards는 원상태로 안돌아가고 끝난 시점에서 멈춤*/
+      }
+      @keyframes box_move {
+        0% {
+          background-color: blue;
+          margin-left: 0px;
+        }
+        100% {
+          background-color: red;
+          margin-left: 200px;
+        }
+      }
+
+      .section {
+        overflow: hidden;
+      }
+      .text_container {
+        width: 1000000px;
+        font-size: 70px;
+        text-transform: uppercase;
+        animation: text_ani 300s linear infinite;
+      }
+      @keyframes text_ani {
+        from {
+        }
+        to {
+          margin-left: -30000px;
+        }
+      }
+
+      .box_container002 {
+        display: flex;
+      }
+      .box002 {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        animation: move 2s linear forwards;
+      }
+      .box003 {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        transition-duration: 0.3;
+      }
+      .box003:hover {
+        background-color: green;
+      }
+      @keyframes move {
+        from {
+          opacity: 0;
+          transform: translate(0px, 0px) scale(0);
+          /* transform: translate(0px, 0px); */
+        }
+        to {
+          /* transform: translate(30deg); */
+          transform: translate(100px, 0px) scale(1.5);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box_container">
+      <div class="box"></div>
+    </div>
+    <div class="section">
+      <div class="text_container">
+        transition, hover transition, hovertransition, hovertransition,
+        hovertransition, hovertransition, hover transition, hover transition,
+        hovertransition, hovertransition, hovertransition, hovertransition,
+        hover transition, hover transition, hovertransition, hovertransition,
+        hovertransition, hovertransition, hover transition, hover transition,
+        hovertransition, hovertransition, hovertransition, hovertransition,
+        hover
+      </div>
+    </div>
+    <div class="box_container002">
+      <div class="box002"></div>
+    </div>
+    <div class="box003"></div>
+  </body>
+</html>

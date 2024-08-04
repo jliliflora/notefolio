@@ -31,11 +31,16 @@ select {
     display: flex;
     gap: 10px;
     padding: 20px;
+    box-sizing: border-box;
   }
   .logo {
     position: absolute;
     top: 20px;
-    left: calc(50% - 100px);
+    // left: calc(50% - 100px);
+    transform: translate(
+      -50%,
+      0
+    ); //얘를 위치잡을때 남발하면 나중에 애니메이션 못쓴다는건 알아두셈
   }
 }
 
@@ -45,6 +50,7 @@ select {
   padding-top: 60px;
   img {
     width: 100%;
+    display: block; // Img도 글자취급을 받아서 살짝 들뜸이 생기는데 얘를 쓰면 박스처리가 되어서 틈이 사라짐
   }
   .item {
     // background: url(../img/item-img.png);
@@ -53,9 +59,12 @@ select {
     // background-repeat: no-repeat;
     position: relative;
     width: 50%;
-    border-left: 1px solid black;
+    border-right: 1px solid black;
     border-bottom: 1px solid black;
     box-sizing: border-box; /*박스 안쪽으로 라인을 주는것*/
+    &:nth-child(2n) {
+      border-right: none;
+    }
 
     .item-text {
       // border: 1px solid blue;
