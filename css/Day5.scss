@@ -41,7 +41,10 @@ select {
     padding-left: 30px;
   }
   .project_items {
-    display: flex;
+    // display: flex;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
     padding-left: 30px;
     padding-right: 30px;
@@ -49,7 +52,8 @@ select {
     box-sizing: border-box;
 
     .pr_item {
-      width: 33.3%;
+      //   width: calc(33.3% - 10px);
+      // 그리드를 쓰면 이렇게 여백 계산을 안해도 됨! 근데 flex를 또 권장한다함 flex가 널리 쓰이기 떄문에ㅇㅇ
       position: relative;
       border-radius: 20px;
       overflow: hidden;

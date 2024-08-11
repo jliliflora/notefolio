@@ -42,7 +42,8 @@ select {
   padding-left: 30px;
 }
 .contents_wrap .project_items {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
   padding-left: 30px;
   padding-right: 30px;
@@ -50,7 +51,6 @@ select {
   box-sizing: border-box;
 }
 .contents_wrap .project_items .pr_item {
-  width: 33.3%;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
